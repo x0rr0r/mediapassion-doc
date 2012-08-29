@@ -14,6 +14,10 @@ En plus de la clef API qui identifie votre application, vos utilisateurs devront
 - le login encodé en base64 (cela permet signaler à l'API que le mot de passe ne sera pas en clair, et de basculer en mode sécurisé) 
 - un sha1 (algorithme de hachage sécurisé) de la concaténation du login en minuscule et du mot de passe. 
 
+``` bash
+$ ./bin/vendors
+```
+
 Exemple en PHP
 ``` php
 $Username = base64_encode($login);
