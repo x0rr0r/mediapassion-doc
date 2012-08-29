@@ -15,18 +15,6 @@ En plus de la clef API qui identifie votre application, vos utilisateurs devront
 - un sha1 (algorithme de hachage sécurisé) de la concaténation du login en minuscule et du mot de passe. 
 
 Exemple en PHP
-
-``` php
-<?php
-// app/autoload.php
-
-$loader->registerNamespaces(array(
-    // ...
-
-    'Imagine'          => __DIR__.'/../vendor/imagine/lib',
-    'Avalanche'        => __DIR__.'/../vendor/bundles',
-));
-```
 ``` php
 $Username = base64_encode($login);
 $Password = sha1(strtolower($login).$apipassword);
